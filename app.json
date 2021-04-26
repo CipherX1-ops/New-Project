@@ -18,7 +18,7 @@
       "value": ""
     },
     "DATABASE_URL": {
-      "description": "Your Bot Token.",
+      "description": "Your MongoDB Url.",
       "value": ""
     },
     "OWNER_ID": {
