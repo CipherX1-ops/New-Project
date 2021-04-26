@@ -1,0 +1,42 @@
+{
+  "name": "Bot",
+  "description": "Simple Bot in Telethon.",
+  "keywords": [
+    "telegram",
+    "bot",
+    "plugin",
+    "telegram-bot"
+  ],
+  "repository": "https://github.com/CipherX1-ops/New-Project",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your Owner ID",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
