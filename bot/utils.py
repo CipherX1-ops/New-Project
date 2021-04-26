@@ -86,8 +86,6 @@ def start_bot(shortname):
         mod.Config = Config
         mod.god_only = god_only()
         mod.sudo_only = sudo_only()
-        mod.eor = eor
-        mod.edit_or_reply = eor
         spec.loader.exec_module(mod)
         sys.modules["bot.plugins" + shortname] = mod
         print("Bot Has imported " + shortname)
