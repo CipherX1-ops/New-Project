@@ -1,0 +1,5 @@
+asyncio
+cryptg
+heroku3
+pymongo
+telethon
