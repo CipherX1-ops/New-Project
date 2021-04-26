@@ -10,7 +10,6 @@ from pymongo import MongoClient
 
 from bot import bot
 from bot import Config
-from bot.Config import DB_URL
 
 # starting MongoClient
 client = MongoClient()
