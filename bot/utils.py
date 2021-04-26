@@ -43,6 +43,20 @@ def god_only():
 
     return decorator
 
+def sudo_only():
+    def decorator(func):
+        @functools.wraps(func)
+        async def wrapper(event):
+            moms = Config.SUDOS
+            if event.sender_id == moms:
+                await func(event)
+            else:
+                pass
+
+        return wrapper
+
+    return decorator
+
 def start_bot(shortname):
     if shortname.startswith("__"):
         pass
