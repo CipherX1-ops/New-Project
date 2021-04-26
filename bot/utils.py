@@ -1,12 +1,22 @@
 import inspect
 import logging
+import glob
 import re
 from pathlib import Path
 import functools
 from telethon import events
+
+from pymongo import MongoClient
+from bot import DATABASE_URL
+
 from bot import bot
 from bot import Config
-import glob
+
+# starting MongoClient
+client = MongoClient()
+client = MongoClient(DATABASE_URL)
+db = client["BotClient"]
+
 bothandler = Config.HANDLER
 def bot_cmd(add_cmd, is_args=False):
     def cmd(func):
