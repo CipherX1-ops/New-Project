@@ -7,14 +7,14 @@ import functools
 from telethon import events
 
 from pymongo import MongoClient
-from bot import DATABASE_URL
 
 from bot import bot
 from bot import Config
+from bot.Config import DB_URL
 
 # starting MongoClient
 client = MongoClient()
-client = MongoClient(DATABASE_URL)
+client = MongoClient(DB_URL)
 db = client["BotClient"]
 
 bothandler = Config.HANDLER
