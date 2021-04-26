@@ -6,4 +6,5 @@ class Config(object):
     HANDLER = os.environ.get("HANDLER", "^/")
     DB_URL = os.environ.get("DB_URL", None)
     OWNER_ID = int(os.environ.get("OWNER_ID", None))
+    SUDOS = set(int(x) for x in os.environ.get("SUDOS", "\.").split())
 
