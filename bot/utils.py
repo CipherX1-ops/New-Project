@@ -9,7 +9,7 @@ from telethon import events
 from pymongo import MongoClient
 
 from bot import bot
-from bot import Config
+from bot.Config import Config
 
 # starting MongoClient
 client = MongoClient()
