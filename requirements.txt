@@ -2,4 +2,5 @@ asyncio
 cryptg
 heroku3
 pymongo
+sqlalchemy>=1.2
 telethon
