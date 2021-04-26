@@ -9,11 +9,11 @@ from telethon import events
 from pymongo import MongoClient
 
 from bot import bot
-from bot.Config import Config
+
 
 # starting MongoClient
 client = MongoClient()
-client = MongoClient(DB_URL)
+client = MongoClient(Config.DB_URL)
 db = client["BotClient"]
 
 bothandler = Config.HANDLER
