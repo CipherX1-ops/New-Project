@@ -1,5 +1,6 @@
 asyncio
 cryptg
+dnspython
 heroku3
 pymongo
 sqlalchemy>=1.2
