@@ -12,7 +12,7 @@ from sys import argv
 from telethon import TelegramClient, events, functions, types
 import telethon.utils
 
-
+ENV = os.environ.get("ENV", False)
 if ENV:
     from bot.Config import Config
 else:
